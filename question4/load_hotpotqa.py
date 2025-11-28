@@ -7,7 +7,7 @@ def load_hotpotqa_simple(num_samples=1000, split='train'):
     print(f"Loading HotpotQA dataset ({split}, {num_samples} samples)...")
     
     # HuggingFace token to avoid rate limits
-    token = os.getenv("HF_TOKEN")
+    token = "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"
     dataset = load_dataset('hotpot_qa', 'fullwiki', split=split, token=token)
     
     articles = []
