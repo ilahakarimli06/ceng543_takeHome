@@ -1,5 +1,18 @@
 # Question 4 - Retrieval-Augmented Generation (RAG)
 
+**Environment / HuggingFace token** - IMPORTANT
+
+- You need a Hugging Face user access token to download some datasets (used in `load_hotpotqa.py`). Set it via an environment variable named `HF_TOKEN`.
+
+**Temporary / session usage**
+
+- Instead of `.env`, you can set the token for a single PowerShell session:
+
+```powershell
+$env:HF_TOKEN = "hf_your_real_token_here"
+python question4\evaluate.py
+```
+
 ## Components
 
 ### Retrievers
