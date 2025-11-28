@@ -1,0 +1,1506 @@
+{
+  "TF-IDF + T5": {
+    "retrieval": {
+      "precision_at_5": 0.824,
+      "recall_at_5": 0.84
+    },
+    "generation_only": {
+      "bleu": 0.19226045647238277,
+      "rouge_l": 0.20285714285714285,
+      "bertscore": 0.8887137770652771
+    },
+    "joint_rag": {
+      "bleu": 0.1697388302672328,
+      "rouge_l": 0.2074285714285714,
+      "bertscore": 0.8856746447086334
+    },
+    "examples": [
+      {
+        "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Ex... Ed Wood: Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.... Sinister 2: Sinister 2 is a 2015 American supernatural horror film directed by Ciaran Foy and written by Scott Derrickson and C. Robert Cargill.  The sequel to the 2012 film \"Sinister\", the film stars James Ranso... Sex Ed (disambiguation): Sex Ed is the process of educating people about sex.... Douglas Wood (naturalist): Douglas Wood is an American children's author, author, singer, song writer, speaker, and musician.  One of Wood's children's books, \"Old Turtle and the Broken Truth\", won one of the 2004 Book Sense Bo...",
+        "topk": [
+          {
+            "pid": "315578c47c89e9e1f1e7086f3e75c4508f8aa6a6",
+            "score": 0.3982623983831164,
+            "title": "Scott Derrickson"
+          },
+          {
+            "pid": "8c85c571d488270026cc8f464fdefab45ddf27f5",
+            "score": 0.31961300354640293,
+            "title": "Ed Wood"
+          },
+          {
+            "pid": "5094b13329213dbed4b4612a163e6599d3b42032",
+            "score": 0.20964320994832075,
+            "title": "Sinister 2"
+          },
+          {
+            "pid": "992ced989e928ffa2cceb0bfe07bc5376bdee265",
+            "score": 0.19472821021415068,
+            "title": "Sex Ed (disambiguation)"
+          },
+          {
+            "pid": "953318b38fea3f00aac151f1d926fcf9d00ff5ad",
+            "score": 0.18296019318176684,
+            "title": "Douglas Wood (naturalist)"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0
+      },
+      {
+        "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+        "reference": "Chief of Protocol",
+        "answer": "unanswerable",
+        "retrieved_context": "William R. Corliss: William Roger Corliss (August 28, 1926 – July 8, 2011) was an American physicist and writer who was known for his interest in collecting data regarding anomalous phenomena.  Arthur C. Clarke described... Tell al-Sultan: Tell al-Sultan (or Tall as-Sultan, Tell es-Sultan and Tell Sultan) could refer to the following locations:... Kiss Kiss (Bang Bang): Kiss Kiss (Bang Bang) is a 2001 British comedy film written and directed by Stewart Sugg.  It features Stellan Skarsgård, Chris Penn, and Paul Bettany.... George A. Archer: George A. Archer (c. 1850 – November 12, 1932) owned a 50-percent interest in Daniels Linseed Co. and a controlling interest in American Linseed Company, which evolved into Archer Daniels Midland.... Kiss Kiss (Chris Brown song): \"Kiss Kiss\" is a song recorded by American recording artist Chris Brown for his second studio album, \"Exclusive\" (2007).  The song features vocals and production credits from hip hop recording artist ...",
+        "topk": [
+          {
+            "pid": "305b6737c033b55a88abc4c54394342206139853",
+            "score": 0.2706502228209584,
+            "title": "William R. Corliss"
+          },
+          {
+            "pid": "0709ea4d025acab760ddbcfc5590873320735e58",
+            "score": 0.22289758487716535,
+            "title": "Tell al-Sultan"
+          },
+          {
+            "pid": "25334298570f6e99d0e3bd0729cdcd05cca1143f",
+            "score": 0.22132626110207285,
+            "title": "Kiss Kiss (Bang Bang)"
+          },
+          {
+            "pid": "69682beca99a59f525425ce188cb8b574fd61e18",
+            "score": 0.21475319438072552,
+            "title": "George A. Archer"
+          },
+          {
+            "pid": "17a9c5897d3d8a737b2639f06d180167c3168b89",
+            "score": 0.20289846718124482,
+            "title": "Kiss Kiss (Chris Brown song)"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.8091201782226562
+      },
+      {
+        "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+        "reference": "Animorphs",
+        "answer": "Animorphs",
+        "retrieved_context": "Animorphs: Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.  ... Isaac Asimov's Magical Worlds of Fantasy: Isaac Asimov's Magical Worlds of Fantasy is a series of twelve themed paperback fantasy and science fiction anthologies edited by Isaac Asimov, Martin H. Greenberg and Charles G. Waugh, a companion se... Time Quintet: The Time Quintet is a fantasy/science fiction series of five young adult novels written by Madeleine L'Engle.... Red Queen (novel): Red Queen is a young adult fantasy novel written by American writer Victoria Aveyard.  It was her first series and her first novel.  It was published in February 2015.  Its sequels are \"Glass Sword\" a... Alien 2: On Earth: Alien 2: On Earth/ Alien 2 Sulla Terra, also known as Alien Terror and Strangers, is a 1980 science fiction film, written and directed by Ciro Ippolito before the trademark \"Alien\" was registered.  It...",
+        "topk": [
+          {
+            "pid": "9f7b61f17303f208577fca5e74a1236fbf65b64a",
+            "score": 0.3106112810616664,
+            "title": "Animorphs"
+          },
+          {
+            "pid": "e27821914480ca40e67d5fa6bc26a8e759893931",
+            "score": 0.22788794310919022,
+            "title": "Isaac Asimov's Magical Worlds of Fantasy"
+          },
+          {
+            "pid": "cb7c6fe28a11044a59667036efdee7be5e64faab",
+            "score": 0.1996596890503361,
+            "title": "Time Quintet"
+          },
+          {
+            "pid": "2f893c6b05553fd4ba34bc852279caf8d91d5ddb",
+            "score": 0.19909988017434016,
+            "title": "Red Queen (novel)"
+          },
+          {
+            "pid": "1b1ddf09fc7ae41efa73f838aefdafff4aee5f5d",
+            "score": 0.1737661856120266,
+            "title": "Alien 2: On Earth"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0
+      },
+      {
+        "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+        "reference": "no",
+        "answer": "no",
+        "retrieved_context": "Sabancı Central Mosque: Sabancı Central Mosque (Turkish: \"Sabancı Merkez Camii\" ) in Adana is the largest mosque in Turkey.  The exterior of the mosque (and its interior decoration) is similar to the Selimiye Mosque in Edirn... Pertevniyal Valide Sultan Mosque: The Pertevniyal Valide Sultan Mosque, also known as the Aksaray Valide Mosque (Turkish: \"Pertevniyal Valide Sultan Camii, Aksaray Valide Sultan Camii\" ), is an Ottoman imperial mosque in Istanbul, Tur... Sultan Ahmed Mosque: The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey.  A popular tourist site, the Sultan Ahmed Mosque continues to function... Al Noor Mosque: The Al Noor Mosque is a mosque in Sharjah.  It is located on the Khaled lagoon at the Buhaira Corniche.  It is of Turkish Ottoman design and was influenced by the Sultan Ahmed Mosque in Turkey.  It is... Seyyid Kasim Gubari: Seyyid Kasim Gubari of Diyarbakır is recorded as being responsible for much of the calligraphy of the Sultan Ahmed Mosque (the \"Blue Mosque\") in Istanbul, he was commissioned to write verses from the ...",
+        "topk": [
+          {
+            "pid": "8bbfd77d4a8c023fad79de2d13362047592341e1",
+            "score": 0.45625363431738963,
+            "title": "Sabancı Central Mosque"
+          },
+          {
+            "pid": "5d069f48cf660c9c8c608a4760df047d1de7eeff",
+            "score": 0.4047452069754935,
+            "title": "Pertevniyal Valide Sultan Mosque"
+          },
+          {
+            "pid": "0b2aae7ab2b9d91e82624e5bd7fcdb65dc68da0b",
+            "score": 0.3963628376943039,
+            "title": "Sultan Ahmed Mosque"
+          },
+          {
+            "pid": "c7cf346457ebcba94c69b5acb5f6fa99895e0b83",
+            "score": 0.3698562922574236,
+            "title": "Al Noor Mosque"
+          },
+          {
+            "pid": "b642c5e6a2b4285f11a1de06730e21fe990e36b9",
+            "score": 0.3684978732419983,
+            "title": "Seyyid Kasim Gubari"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0000001192092896
+      },
+      {
+        "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+        "reference": "Greenwich Village, New York City",
+        "answer": "New York",
+        "retrieved_context": "East Stone Gap, Virginia: East Stone Gap is an unincorporated community in Wise County, Virginia, United States.  East Stone Gap is an eastern suburb of Big Stone Gap; U.S. Route 23 separates the two settlements.  East Stone G... Union High School (Big Stone Gap, Virginia): Union High School, located in Big Stone Gap, Virginia, is part of Wise County Public Schools.  Union High School is a consolidated school, serving students from Appalachia and Big Stone Gap.... Big Stone Gap (film): Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Media Society.  Based o... WLSD: WLSD is a Southern Gospel and Religious formatted broadcast radio station licensed to Big Stone Gap, Virginia, serving the Big Stone Gap/Norton area.  WLSD is owned and operated by Valley Broadcasting... WSWV-FM: WSWV-FM is a Country and Bluegrass-formatted broadcast radio station licensed to Pennington Gap, Virginia, serving the Pennington Gap/Big Stone Gap/Jonesville area.  WSWV-FM is owned and operated by B...",
+        "topk": [
+          {
+            "pid": "5f609627348ea4eda6d1ad44e5744944ca041927",
+            "score": 0.5260663710149429,
+            "title": "East Stone Gap, Virginia"
+          },
+          {
+            "pid": "37fea0853fba5d562e8190b0d47706704170e316",
+            "score": 0.5153362665535741,
+            "title": "Union High School (Big Stone Gap, Virginia)"
+          },
+          {
+            "pid": "2b21e5a46bf7ded3868850171541d6c8ecdc0b59",
+            "score": 0.4801459736520257,
+            "title": "Big Stone Gap (film)"
+          },
+          {
+            "pid": "d445cc0b2486170705707355b0ca44640c6a52c1",
+            "score": 0.47433902842319975,
+            "title": "WLSD"
+          },
+          {
+            "pid": "fa1534829b927f5b34b1f56c70ae3f8fe5688235",
+            "score": 0.36245510021745153,
+            "title": "WSWV-FM"
+          }
+        ],
+        "bleu": 0.1353352832366127,
+        "rouge": 0.5714285714285715,
+        "bertscore": 0.8688083291053772
+      },
+      {
+        "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+        "reference": "YG Entertainment",
+        "answer": "Jungle Entertainment",
+        "retrieved_context": "List of South Korean idol groups: The following is a list of South Korean idol musical bands.  This includes a list of boy bands and girl groups, organized by year of debut.... Bad Girl (Beast song): \"Bad Girl\" is the debut single South Korean boy group Beast, coming from their debut mini-album \"Beast is the B2ST\" which was released in South Korea on October 14, 2009.... 4Ten: 4Ten (Hangul:포텐, formerly POTEN), commonly stylized as 4TEN, is a South Korean girl group formed by Jungle Entertainment in 2014.  The group currently consists of four members: Hyeji, Hyejin, Heeo, an... Cross Gene: Cross Gene (Korean: 크로스진; stylized as CROSS GENE) is a five-member boy group based in South Korea.  Signed under Amuse Korea, the group consists of South Korean members: Shin, Sangmin, Yongseok and Se... Lina (South Korean singer): Lee Ji-yeon (born February 18, 1984), better known by her stage name Lina is a South Korean singer and musical actress.  She debuted in 2002 as a member of South Korean R&B duo Isak N Jiyeon and disba...",
+        "topk": [
+          {
+            "pid": "115e2e7c7c03cabfaaf5104a378b232b8d833f44",
+            "score": 0.4089901864493479,
+            "title": "List of South Korean idol groups"
+          },
+          {
+            "pid": "1da80342885cfe098d7947173e582b8c4cda6753",
+            "score": 0.39448770953164003,
+            "title": "Bad Girl (Beast song)"
+          },
+          {
+            "pid": "3a8b365c22ccbde8bc714cfa654f7329229dce0c",
+            "score": 0.3888154818314744,
+            "title": "4Ten"
+          },
+          {
+            "pid": "7531991d974ecf5e6ee26453171885ae0ff3d605",
+            "score": 0.36508296914627236,
+            "title": "Cross Gene"
+          },
+          {
+            "pid": "e3b9da07d40804a44c36395a5a8197cdf16abb3c",
+            "score": 0.35543507456026896,
+            "title": "Lina (South Korean singer)"
+          }
+        ],
+        "bleu": 0.5,
+        "rouge": 0.5,
+        "bertscore": 0.8911005854606628
+      },
+      {
+        "query": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+        "reference": "Eenasul Fateh",
+        "answer": "Brian Lane Green",
+        "retrieved_context": "Russell Schriefer: Russell J. Schriefer is an American political strategist and media consultant who has worked on six out of the last seven presidential campaigns.  In 2012, he was a senior advisor and media consultant... Lisa Hickey: Lisa Hickey is an American author, advertising consultant, and social media consultant.  She is the CEO of Good Men Media, Inc. and the Publisher of Good Men Magazine as part of the Good Men Project.... Louise Glück: Louise Elisabeth Glück (born April 22, 1943) is an American poet.  She was appointed Poet Laureate Consultant in Poetry to the Library of Congress in 2003, after serving as a Special Bicentennial Cons... Rich Cronin (executive): Richard Cronin is a media consultant and former Cable television executive.... Brian Lane Green: Brian Lane Green (born March 9, 1962) is an American stage and television actor and singer.  He is known for his stage roles throughout the country such as the title character in Joseph and the Amazin...",
+        "topk": [
+          {
+            "pid": "d175c7bce45732a4d31a03c85a9d5a4a3529bae6",
+            "score": 0.17414777080455104,
+            "title": "Russell Schriefer"
+          },
+          {
+            "pid": "7d64ae541e67d312994082ad59af56dc58c5ed69",
+            "score": 0.1703196605734992,
+            "title": "Lisa Hickey"
+          },
+          {
+            "pid": "c8720a8f0cdd3dac0e4550a7ef264f1e2eccf5bf",
+            "score": 0.14100745608734527,
+            "title": "Louise Glück"
+          },
+          {
+            "pid": "3b550c9387ff24fc74c6137b4a3c9c449859a1da",
+            "score": 0.14018450117662107,
+            "title": "Rich Cronin (executive)"
+          },
+          {
+            "pid": "7e7351ed2ce638eb58dc34ef69df8414d160eef5",
+            "score": 0.13990051850600843,
+            "title": "Brian Lane Green"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.7380900382995605
+      },
+      {
+        "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+        "reference": "3,677 seated",
+        "answer": "3,280",
+        "retrieved_context": "Bengal Field: Bengal Field is an outdoor athletic stadium in the western United States, in Lewiston, Idaho.  Opened in 1934 as a multi-sport athletic field, it is currently the football stadium for Lewiston High Sc... Maine State Route 126: State Route 126 (SR 126) is a state highway in central Maine connecting Lewiston and Washington.... Maine State Route 196: State Route 196 (SR 196) is a state highway in the U.S. state of Maine.  It connects Lewiston to Brunswick, following the Androscoggin River valley.... Portland metropolitan area, Maine: The city of Portland, Maine, is the hub city of a metropolitan area in southern Maine, in the United States.  The region is commonly known as Greater Portland or the Portland metropolitan area.  For s... Vaillant Arena: Vaillant Arena (Eisstadion Davos) is an arena in Davos, Switzerland.  It is primarily used for ice hockey and is the home arena of HC Davos.  It holds 7,080 people, of which 3,280 are seated.  Every y...",
+        "topk": [
+          {
+            "pid": "558967ef6c60a11643e85ac9cd0110d705cded51",
+            "score": 0.30482790171811813,
+            "title": "Bengal Field"
+          },
+          {
+            "pid": "be322a8907c49e92e48cd9c0978b87b7cbae1d43",
+            "score": 0.27621102794660246,
+            "title": "Maine State Route 126"
+          },
+          {
+            "pid": "b62a0c4ba7c6c646d830fff9521cfdb38f68affd",
+            "score": 0.24748233153934013,
+            "title": "Maine State Route 196"
+          },
+          {
+            "pid": "b20a3673ace48b3ede2d526a1b1ed4c5ba35b111",
+            "score": 0.19194186435175958,
+            "title": "Portland metropolitan area, Maine"
+          },
+          {
+            "pid": "ed3db8802c7cb738c91547b5a2b4cc56cbabcaf3",
+            "score": 0.1846027273392536,
+            "title": "Vaillant Arena"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.4,
+        "bertscore": 0.8961898684501648
+      },
+      {
+        "query": "Who is older, Annie Morton or Terry Richardson?",
+        "reference": "Terry Richardson",
+        "answer": "Annie Morton",
+        "retrieved_context": "Annie Morton: Annie Morton (born October 8, 1970) is an American model born in Pennsylvania.  She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines.  She has been photographed... J. Sterling Morton High School East: J. Sterling Morton High School East (often called \"Morton East\") is a public secondary school located in Cicero, Illinois.  Morton East is one of three schools in J. Sterling Morton High School Distri... Morton's The Steakhouse: Morton’s The Steakhouse is a chain of more than 78 steak restaurants with locations in the United States and franchised abroad.  It is a wholly owned subsidiary of Landry's, Inc..  founded in Chicago ... Samantha Morton: Samantha Jane Morton (born 13 May 1977) is an English actress, screenwriter and director.  She has received critical acclaim throughout her career and has won a BAFTA Award, one BIFA Award, one Golden... Évocateur: The Morton Downey Jr. Movie: Évocateur: The Morton Downey Jr.  Movie is a 2012 documentary film that chronicles the history of \"The Morton Downey Jr.  Show\" and Downey's influence on \"trash TV.\"  The film also looks at Downey's r...",
+        "topk": [
+          {
+            "pid": "9762b07f13745fc21360f3d72b4dd652d13ee89f",
+            "score": 0.35691553151770616,
+            "title": "Annie Morton"
+          },
+          {
+            "pid": "71ba82ec6e15fd493b769137fe0fea0846506f0f",
+            "score": 0.2910008000825912,
+            "title": "J. Sterling Morton High School East"
+          },
+          {
+            "pid": "e2fdae50b76c919dc5af89f5703f64636e263caa",
+            "score": 0.2219802824705972,
+            "title": "Morton's The Steakhouse"
+          },
+          {
+            "pid": "c9881630d8d8b71086a39ac39cd60cc4bb79f6f3",
+            "score": 0.20784615075449936,
+            "title": "Samantha Morton"
+          },
+          {
+            "pid": "53e5bd119cad1195c2cf8c84dcb981a2648533ca",
+            "score": 0.20528805723492932,
+            "title": "Évocateur: The Morton Downey Jr. Movie"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.9008997678756714
+      },
+      {
+        "query": "Are Local H and For Against both from the United States?",
+        "reference": "yes",
+        "answer": "no",
+        "retrieved_context": "Alabama elections, 2004: The 2004 United States Senate election in Alabama took place on November 2, 2004 alongside other elections to the United States Senate in other states as well as elections to the United States House o... Okobo, Nigeria: Okobo is located in the south east of Nigeria and is a Local Government Area of Akwa Ibom State.  The local government area was created in 1989 by the government of President Ibrahim Babangida.  The l... United States Senate election in Oklahoma, 2014: The 2014 United States Senate election in Oklahoma took place on November 4, 2014 to elect a member of the United States Senate to represent the State of Oklahoma, concurrently with the special electi... United States Senate election in Oklahoma, 2016: The 2016 United States Senate election in Oklahoma was held on November 8, 2016 to elect a member of the United States Senate to represent the State of Oklahoma, concurrently with the 2016 U.S. presid... United States Senate election in Hawaii, 2004: The 2004 United States Senate election in Hawaii took place on November 2, 2004 alongside other elections to the United States Senate in other states as well as elections to the United States House of...",
+        "topk": [
+          {
+            "pid": "6927603765e3ffc192117783b3193a85baee66f9",
+            "score": 0.32463586832127045,
+            "title": "Alabama elections, 2004"
+          },
+          {
+            "pid": "a519a072284a0d7e62baec2f8ce62e193cc9153f",
+            "score": 0.3071060131537752,
+            "title": "Okobo, Nigeria"
+          },
+          {
+            "pid": "c4ca4363dd123254e5dc249821fc6beb8e00db72",
+            "score": 0.3069936117502378,
+            "title": "United States Senate election in Oklahoma, 2014"
+          },
+          {
+            "pid": "79f5fc7b9bdf669baa48628d7b6a78d35110ad9f",
+            "score": 0.30132882372367015,
+            "title": "United States Senate election in Oklahoma, 2016"
+          },
+          {
+            "pid": "4d43e49efd899272bb87025ce4f461b26dc054b9",
+            "score": 0.29804766236997193,
+            "title": "United States Senate election in Hawaii, 2004"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.9954854249954224
+      }
+    ],
+    "faithful_examples": [
+      {
+        "query": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+        "reference": "no",
+        "answer": "no",
+        "retrieved_context": "Bantiger TV Tower: Bantiger TV Tower is a 196 metre tall tower used for FM- and TV-transmission at on the Bantiger mountain, a mountain east of Berne situated in the municipality of Bolligen.  The Bantiger TV Tower was ... Old Chicago Water Tower District: The Old Chicago Water Tower District is a historic district along the Magnificent Mile shopping district in the Near North Side community area of Chicago, Illinois.  The district is located on both si... William Murphy House: The William Murphy House is a historic house located at 97 Sewall Avenue in Brookline, Massachusetts.... Greenwich Avenue: Greenwich Avenue, formerly Greenwich Lane, is a southeast-northwest avenue located in the Greenwich Village neighborhood of Manhattan, New York City.  It extends from the intersection of 6th Avenue an... Hess Tower: Hess Tower is a 29-story building located adjacent to Discovery Green park in downtown Houston, Texas.  It was formerly called Discovery Tower until Hess Corporation leased the entire tower in January...",
+        "topk": [
+          {
+            "pid": "e2f1a6da54f4fd29059c3d7dc5fb4ca07cc16abc",
+            "score": 0.20815458735399273,
+            "title": "Bantiger TV Tower"
+          },
+          {
+            "pid": "3e4a22d18351af292051ef67085019de08b0df00",
+            "score": 0.2007852503966842,
+            "title": "Old Chicago Water Tower District"
+          },
+          {
+            "pid": "f6a56b4af9c5cf2b36be24534257e478e926f3a0",
+            "score": 0.1993737336858606,
+            "title": "William Murphy House"
+          },
+          {
+            "pid": "b3a134a5e2a1d806b73cce2ae6610d9ce70e0501",
+            "score": 0.18416236728882898,
+            "title": "Greenwich Avenue"
+          },
+          {
+            "pid": "0b4fe3f094aedf4d1544d627f77aa2de220c51ed",
+            "score": 0.1801798841797243,
+            "title": "Hess Tower"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0000001192092896,
+        "joint": 1.00000003973643
+      },
+      {
+        "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+        "reference": "no",
+        "answer": "no",
+        "retrieved_context": "Sabancı Central Mosque: Sabancı Central Mosque (Turkish: \"Sabancı Merkez Camii\" ) in Adana is the largest mosque in Turkey.  The exterior of the mosque (and its interior decoration) is similar to the Selimiye Mosque in Edirn... Pertevniyal Valide Sultan Mosque: The Pertevniyal Valide Sultan Mosque, also known as the Aksaray Valide Mosque (Turkish: \"Pertevniyal Valide Sultan Camii, Aksaray Valide Sultan Camii\" ), is an Ottoman imperial mosque in Istanbul, Tur... Sultan Ahmed Mosque: The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey.  A popular tourist site, the Sultan Ahmed Mosque continues to function... Al Noor Mosque: The Al Noor Mosque is a mosque in Sharjah.  It is located on the Khaled lagoon at the Buhaira Corniche.  It is of Turkish Ottoman design and was influenced by the Sultan Ahmed Mosque in Turkey.  It is... Seyyid Kasim Gubari: Seyyid Kasim Gubari of Diyarbakır is recorded as being responsible for much of the calligraphy of the Sultan Ahmed Mosque (the \"Blue Mosque\") in Istanbul, he was commissioned to write verses from the ...",
+        "topk": [
+          {
+            "pid": "8bbfd77d4a8c023fad79de2d13362047592341e1",
+            "score": 0.45625363431738963,
+            "title": "Sabancı Central Mosque"
+          },
+          {
+            "pid": "5d069f48cf660c9c8c608a4760df047d1de7eeff",
+            "score": 0.4047452069754935,
+            "title": "Pertevniyal Valide Sultan Mosque"
+          },
+          {
+            "pid": "0b2aae7ab2b9d91e82624e5bd7fcdb65dc68da0b",
+            "score": 0.3963628376943039,
+            "title": "Sultan Ahmed Mosque"
+          },
+          {
+            "pid": "c7cf346457ebcba94c69b5acb5f6fa99895e0b83",
+            "score": 0.3698562922574236,
+            "title": "Al Noor Mosque"
+          },
+          {
+            "pid": "b642c5e6a2b4285f11a1de06730e21fe990e36b9",
+            "score": 0.3684978732419983,
+            "title": "Seyyid Kasim Gubari"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0000001192092896,
+        "joint": 1.00000003973643
+      },
+      {
+        "query": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "Parma Airport: Parma Airport (Italian: \"Aeroporto di Parma\" , IATA: PMF, ICAO: LIMP ) is located 1.3 NM northwest of Parma, a city in the Emilia-Romagna region of Italy.  The airport was opened on 5 May 1991.  It is... Macbeth (opera): Macbeth (] ) is an opera in four acts by Giuseppe Verdi, with an Italian libretto by Francesco Maria Piave and additions by Andrea Maffei, based on William Shakespeare's play of the same name.... Giuseppe Capponi: Giuseppe Capponi (14 September 1832 – 6 August 1889) was an Italian operatic tenor who sang leading roles both in Italy and Europe.  He is most remembered today as the tenor soloist in the world premi... Aida: Aida (] ) is an opera in four acts by Giuseppe Verdi to an Italian libretto by Antonio Ghislanzoni.  Set in Egypt, it was commissioned by and first performed at Cairo's Khedivial Opera House on 24 Dec... Il trovatore: Il trovatore (] ; Italian for \"The Troubadour\") is an opera in four acts by Giuseppe Verdi to an Italian libretto largely written by Salvadore Cammarano, based on the play \"El trovador\" (1836) by Anto...",
+        "topk": [
+          {
+            "pid": "d9da9cb66dc14728b24196f6bbde240ec0ff8dd4",
+            "score": 0.43410082304836817,
+            "title": "Parma Airport"
+          },
+          {
+            "pid": "f8e9e20bfa01d8d9cee2bbc7eff8b3230a566cec",
+            "score": 0.40656022998269054,
+            "title": "Macbeth (opera)"
+          },
+          {
+            "pid": "1facdf89ddb01fa7b888c33eb3ac1d3938c13975",
+            "score": 0.3788959043943951,
+            "title": "Giuseppe Capponi"
+          },
+          {
+            "pid": "7fa5d2a04296d465154c8dde01177e284b33b5a3",
+            "score": 0.34585318195468295,
+            "title": "Aida"
+          },
+          {
+            "pid": "0b4e49d587535a16cda5acf33f94f2017943bd58",
+            "score": 0.2934357988800984,
+            "title": "Il trovatore"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "Scott Derrickson: Scott Derrickson (born July 16, 1966) is an American director, screenwriter and producer.  He lives in Los Angeles, California.  He is best known for directing horror films such as \"Sinister\", \"The Ex... Ed Wood: Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.... Sinister 2: Sinister 2 is a 2015 American supernatural horror film directed by Ciaran Foy and written by Scott Derrickson and C. Robert Cargill.  The sequel to the 2012 film \"Sinister\", the film stars James Ranso... Sex Ed (disambiguation): Sex Ed is the process of educating people about sex.... Douglas Wood (naturalist): Douglas Wood is an American children's author, author, singer, song writer, speaker, and musician.  One of Wood's children's books, \"Old Turtle and the Broken Truth\", won one of the 2004 Book Sense Bo...",
+        "topk": [
+          {
+            "pid": "315578c47c89e9e1f1e7086f3e75c4508f8aa6a6",
+            "score": 0.3982623983831164,
+            "title": "Scott Derrickson"
+          },
+          {
+            "pid": "8c85c571d488270026cc8f464fdefab45ddf27f5",
+            "score": 0.31961300354640293,
+            "title": "Ed Wood"
+          },
+          {
+            "pid": "5094b13329213dbed4b4612a163e6599d3b42032",
+            "score": 0.20964320994832075,
+            "title": "Sinister 2"
+          },
+          {
+            "pid": "992ced989e928ffa2cceb0bfe07bc5376bdee265",
+            "score": 0.19472821021415068,
+            "title": "Sex Ed (disambiguation)"
+          },
+          {
+            "pid": "953318b38fea3f00aac151f1d926fcf9d00ff5ad",
+            "score": 0.18296019318176684,
+            "title": "Douglas Wood (naturalist)"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+        "reference": "Animorphs",
+        "answer": "Animorphs",
+        "retrieved_context": "Animorphs: Animorphs is a science fantasy series of young adult books written by Katherine Applegate and her husband Michael Grant, writing together under the name K. A. Applegate, and published by Scholastic.  ... Isaac Asimov's Magical Worlds of Fantasy: Isaac Asimov's Magical Worlds of Fantasy is a series of twelve themed paperback fantasy and science fiction anthologies edited by Isaac Asimov, Martin H. Greenberg and Charles G. Waugh, a companion se... Time Quintet: The Time Quintet is a fantasy/science fiction series of five young adult novels written by Madeleine L'Engle.... Red Queen (novel): Red Queen is a young adult fantasy novel written by American writer Victoria Aveyard.  It was her first series and her first novel.  It was published in February 2015.  Its sequels are \"Glass Sword\" a... Alien 2: On Earth: Alien 2: On Earth/ Alien 2 Sulla Terra, also known as Alien Terror and Strangers, is a 1980 science fiction film, written and directed by Ciro Ippolito before the trademark \"Alien\" was registered.  It...",
+        "topk": [
+          {
+            "pid": "9f7b61f17303f208577fca5e74a1236fbf65b64a",
+            "score": 0.3106112810616664,
+            "title": "Animorphs"
+          },
+          {
+            "pid": "e27821914480ca40e67d5fa6bc26a8e759893931",
+            "score": 0.22788794310919022,
+            "title": "Isaac Asimov's Magical Worlds of Fantasy"
+          },
+          {
+            "pid": "cb7c6fe28a11044a59667036efdee7be5e64faab",
+            "score": 0.1996596890503361,
+            "title": "Time Quintet"
+          },
+          {
+            "pid": "2f893c6b05553fd4ba34bc852279caf8d91d5ddb",
+            "score": 0.19909988017434016,
+            "title": "Red Queen (novel)"
+          },
+          {
+            "pid": "1b1ddf09fc7ae41efa73f838aefdafff4aee5f5d",
+            "score": 0.1737661856120266,
+            "title": "Alien 2: On Earth"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      }
+    ],
+    "hallucinated_examples": [
+      {
+        "query": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+        "reference": "Eenasul Fateh",
+        "answer": "Brian Lane Green",
+        "retrieved_context": "Russell Schriefer: Russell J. Schriefer is an American political strategist and media consultant who has worked on six out of the last seven presidential campaigns.  In 2012, he was a senior advisor and media consultant... Lisa Hickey: Lisa Hickey is an American author, advertising consultant, and social media consultant.  She is the CEO of Good Men Media, Inc. and the Publisher of Good Men Magazine as part of the Good Men Project.... Louise Glück: Louise Elisabeth Glück (born April 22, 1943) is an American poet.  She was appointed Poet Laureate Consultant in Poetry to the Library of Congress in 2003, after serving as a Special Bicentennial Cons... Rich Cronin (executive): Richard Cronin is a media consultant and former Cable television executive.... Brian Lane Green: Brian Lane Green (born March 9, 1962) is an American stage and television actor and singer.  He is known for his stage roles throughout the country such as the title character in Joseph and the Amazin...",
+        "topk": [
+          {
+            "pid": "d175c7bce45732a4d31a03c85a9d5a4a3529bae6",
+            "score": 0.17414777080455104,
+            "title": "Russell Schriefer"
+          },
+          {
+            "pid": "7d64ae541e67d312994082ad59af56dc58c5ed69",
+            "score": 0.1703196605734992,
+            "title": "Lisa Hickey"
+          },
+          {
+            "pid": "c8720a8f0cdd3dac0e4550a7ef264f1e2eccf5bf",
+            "score": 0.14100745608734527,
+            "title": "Louise Glück"
+          },
+          {
+            "pid": "3b550c9387ff24fc74c6137b4a3c9c449859a1da",
+            "score": 0.14018450117662107,
+            "title": "Rich Cronin (executive)"
+          },
+          {
+            "pid": "7e7351ed2ce638eb58dc34ef69df8414d160eef5",
+            "score": 0.13990051850600843,
+            "title": "Brian Lane Green"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7380900382995605,
+        "joint": 0.24603001276652017
+      },
+      {
+        "query": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+        "reference": "Fujioka, Gunma",
+        "answer": "Japan",
+        "retrieved_context": "Buck-Tick: Buck-Tick (stylized as BUCK-TICK) is a Japanese rock band, formed in Fujioka, Gunma in 1983.  The group has consisted of Atsushi Sakurai (lead vocals), Hisashi Imai (guitar), Hidehiko Hoshino (guitar)... Tick, Tick... Boom!: Tick, Tick... Boom!  (styled as tick, tick... BOOM!)  is a musical written by American composer Jonathan Larson, who won a Pulitzer and three Tony Awards for his musical \"Rent\".  \"Tick, Tick... Boom!\"... Naura Hayden: Naura Hayden, originally \"Norah Helene Hayden\" (September 29, 1930 – August 10, 2013) in New York, New York) was an author (under that name), who worked in entertainment also as Nora Hayden and in mod... Ai no Wakusei: Ai no Wakusei (愛の惑星) is the only solo album by released by Sakurai Atsushi, vocalist for the Japanese rock band Buck-Tick.  It was released on June 23, 2004 through Victor Entertainment.  The album wa... Uncle Buck (disambiguation): Uncle Buck is a 1989 American comedy film starring John Candy....",
+        "topk": [
+          {
+            "pid": "6bd11ece4ecb53764f5a9c9703e527a82bc5651d",
+            "score": 0.347164647991716,
+            "title": "Buck-Tick"
+          },
+          {
+            "pid": "a11c365f00d88cb101ec9fb422230e1061bee5a1",
+            "score": 0.28876124453641105,
+            "title": "Tick, Tick... Boom!"
+          },
+          {
+            "pid": "6b025fc23058c1bd8df48eb388c0456f89aa23a7",
+            "score": 0.2650766635602815,
+            "title": "Naura Hayden"
+          },
+          {
+            "pid": "0a19e890ac3035b99200a751c30160e72321c982",
+            "score": 0.2538047723515993,
+            "title": "Ai no Wakusei"
+          },
+          {
+            "pid": "e4a378cf06c34f8f05a30fd7204c403f8c0d6812",
+            "score": 0.2484015847380264,
+            "title": "Uncle Buck (disambiguation)"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7680301070213318,
+        "joint": 0.2560100356737773
+      },
+      {
+        "query": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+        "reference": "Charles Eugène",
+        "answer": "Éliane Devries",
+        "retrieved_context": "Chablais Alps: The Chablais Alps are a mountain range in the western Alps.  They are situated between Lake Geneva and the Mont Blanc Massif.  The Col des Montets separates them from the Mont Blanc Massif in the sout... Berger Blanc Suisse: The Berger Blanc Suisse (English: White Swiss Shepherd , German: \"Weisser Schweizer Schäferhund\" , Italian: \"Pastore Svizzero Bianco\" ) is a breed of dog from Switzerland.  It is of the same origins a... Walking on the Moon: \"Walking on the Moon\" is a song by English rock band The Police, released as the second single from their second studio album, \"Reggatta de Blanc\" (1979).  The song was written by the band's lead voca... Alps: The Alps ( ; French: \"Alpes\" ] ; German: \"Alpen\" ] ; Italian: \"Alpi\" ] ; Romansh: \"Alps\" ; Slovene: \"Alpe\" ] ) are the highest and most extensive mountain range system that lies entirely in Europe, st... Indochine (film): Indochine (] ) is a 1992 French film set in colonial French Indochina during the 1930s to 1950s.  It is the story of Éliane Devries, a French plantation owner, and of her adopted Vietnamese daughter, ...",
+        "topk": [
+          {
+            "pid": "3432aad2a5d36eefb49e3fd2f77f6da89ad29c12",
+            "score": 0.25351121652435776,
+            "title": "Chablais Alps"
+          },
+          {
+            "pid": "301b3cf8eee7e0a098c1c0d18b208b92b5a12636",
+            "score": 0.23695423402065074,
+            "title": "Berger Blanc Suisse"
+          },
+          {
+            "pid": "6a3b50b46aba410bdb6360fd76eed2a1e83d8a1d",
+            "score": 0.2048107148648226,
+            "title": "Walking on the Moon"
+          },
+          {
+            "pid": "045eeff63b6db5a43861fcd6f76df2c59ae01cd5",
+            "score": 0.20161729900356756,
+            "title": "Alps"
+          },
+          {
+            "pid": "f03123299d8c78c46e7ccb4eb3ec46482e8b16e1",
+            "score": 0.17398733344394607,
+            "title": "Indochine (film)"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7728761434555054,
+        "joint": 0.25762538115183514
+      },
+      {
+        "query": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+        "reference": "Phil Spector",
+        "answer": "Gerry Goffin and Russ Titelman",
+        "retrieved_context": "Yes I Will: \"Yes I Will\", also known as \"I'll Be True to You\", is a song written by Gerry Goffin and Russ Titelman.  The song was first recorded in 1964 by British Beat group The Hollies who released it as a sing... The End of Agent W4C: Konec agenta W4C prostřednictvím psa pana Foustky (English: The End of Agent W4C ) is a 1967 Czechoslovak film parodying the James Bond secret agent genre.  Directed by Václav Vorlíček based on the st... Big Box Little Box: \"Big Box Little Box\" is a song by Irish comedy duo Damo and Ivor, released on 26 November 2011.  This song is the second released by the duo, from their album \"Epic Choons\".... More Than Words Can Say: \"More Than Words Can Say\" (also known as \"(I Need You Now) More Than Words Can Say\" for promotional purposes) is a song by Canadian rock band Alias.  It was released in September 1990 as the second si... L'Indigné: L'Indigné (\"The Rebel\") is a 20-CD box set compilation of the recorded studio albums of Léo Ferré for Barclay Records between 1960 and 1974.  The limited edition box set was released to mark the 20th ...",
+        "topk": [
+          {
+            "pid": "63d0a39516d8e9a31d78867f127e6ceaa6b6a258",
+            "score": 0.22691497719742482,
+            "title": "Yes I Will"
+          },
+          {
+            "pid": "ae2948f072234b43c9edcd720b8dd50932b3b665",
+            "score": 0.19852845548396972,
+            "title": "The End of Agent W4C"
+          },
+          {
+            "pid": "4bdd1f39519fde12848f7755f3c1edce97893fd4",
+            "score": 0.1846998749654405,
+            "title": "Big Box Little Box"
+          },
+          {
+            "pid": "736974a0c6520ccbfeae1506ecdcf0deebba9a4d",
+            "score": 0.16111697834981645,
+            "title": "More Than Words Can Say"
+          },
+          {
+            "pid": "5ad1ba040d7d62a891c5446dc417f9d0ab2a6d14",
+            "score": 0.1592345484624778,
+            "title": "L'Indigné"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7928996086120605,
+        "joint": 0.2642998695373535
+      },
+      {
+        "query": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+        "reference": "Yellowcraig",
+        "answer": "A198",
+        "retrieved_context": "Canty Bay: Canty Bay is a coastal hamlet off the A198, in East Lothian, Scotland, situated opposite the Bass Rock and Tantallon Castle.  Settlements nearby include Auldhame, Scoughall, Seacliff, and the Peffer S... Viewpark: Viewpark is a small urban development north-east of Uddingston in North Lanarkshire, Scotland.  Viewpark is adjacent to Tannochside, and is 2 km west of Bellshill.  Viewpark is often considered a dist... Jack Stewart-Clark: Sir John \"Jack\" Stewart-Clark, 3rd Baronet (born 17 September 1929) is a British businessman and former Member of the European Parliament (MEP).  He represented the Conservative and Unionist Party in ... Dundas Castle: Dundas Castle is a 15th-century castle, with substantial 19th-century additions by William Burn, in the Dalmeny parish of West Lothian, Scotland.  The home of the Dundas family since the Middle Ages, ... Tuancheng Fortress: The Tuancheng Fortress or Tuan Cheng Fortress (Chinese:  團城演武廳 ,  团城演武厅 ,  \"Tuánchéng Yǎnwǔtīng\",  \"Round Wall Fortress\") is a historic 18th-century fortress located near the Fragrant Hills in the Hai...",
+        "topk": [
+          {
+            "pid": "2924a1472524cee09c985bccc9969e07e21f28a7",
+            "score": 0.4398555588965332,
+            "title": "Canty Bay"
+          },
+          {
+            "pid": "13697894a29aa1de4ca16f286ab9ba878b196688",
+            "score": 0.30262117422522744,
+            "title": "Viewpark"
+          },
+          {
+            "pid": "ec38dbf2a95d3b404d73a8079ad9ea7e76bf446e",
+            "score": 0.2224839830019506,
+            "title": "Jack Stewart-Clark"
+          },
+          {
+            "pid": "6006dd1026cf81b1a9db81dca2a41af00ee54c67",
+            "score": 0.2108740960848174,
+            "title": "Dundas Castle"
+          },
+          {
+            "pid": "52b523dcdf45721dd67c8b540f2342940f542fff",
+            "score": 0.19004873100076608,
+            "title": "Tuancheng Fortress"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7949427962303162,
+        "joint": 0.26498093207677204
+      }
+    ]
+  },
+  "SBERT + T5": {
+    "retrieval": {
+      "precision_at_5": 0.84,
+      "recall_at_5": 0.87
+    },
+    "generation_only": {
+      "bleu": 0.19226045647238277,
+      "rouge_l": 0.20285714285714285,
+      "bertscore": 0.8887137770652771
+    },
+    "joint_rag": {
+      "bleu": 0.1420773708742736,
+      "rouge_l": 0.17666666666666667,
+      "bertscore": 0.8732684636116028
+    },
+    "examples": [
+      {
+        "query": "Were Scott Derrickson and Ed Wood of the same nationality?",
+        "reference": "yes",
+        "answer": "no",
+        "retrieved_context": "Ed Wood: Ed Wood Edward Davis Wood Jr. (October 10, 1924 – December 10, 1978) was an American filmmaker, actor, writer, producer, and director.... Todd Woodbridge: Todd Woodbridge Todd Andrew Woodbridge, OAM (born 2 April 1971) is a retired Australian tennis player.  He was born in Sydney and raised in Kogarah Bay by his parents, Kevin and Barbara.  He has two o... Tony Woods (American football): Tony Woods (American football) Stanley Anthony Woods (born October 11, 1965) is a former professional American football linebacker and defensive end in the National Football League (NFL) who played fo... Ed Rose: Ed Rose Ed Rose is an American sound engineer and record producer.  He has worked extensively with groups in the modern emo and pop punk scenes.  He also co-owns Black Lodge Recording with Rob Pope an... Adam Hinshelwood: Adam Hinshelwood Adam Hinshelwood (born 8 January 1984) is an English football manager and former player who most recently managed Worthing.  He is the son of ex-England under-21 and Crystal Palace fo...",
+        "topk": [
+          {
+            "pid": 42397,
+            "score": 0.536226749420166,
+            "title": "Ed Wood"
+          },
+          {
+            "pid": 44490,
+            "score": 0.43750277161598206,
+            "title": "Todd Woodbridge"
+          },
+          {
+            "pid": 11700,
+            "score": 0.4149823784828186,
+            "title": "Tony Woods (American football)"
+          },
+          {
+            "pid": 21654,
+            "score": 0.3985179662704468,
+            "title": "Ed Rose"
+          },
+          {
+            "pid": 25344,
+            "score": 0.3879778981208801,
+            "title": "Adam Hinshelwood"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.9954854249954224
+      },
+      {
+        "query": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+        "reference": "Chief of Protocol",
+        "answer": "president of Storefront Pictures",
+        "retrieved_context": "The Midnight Kiss: The Midnight Kiss The Midnight Kiss is a lost 1926 silent film directed by Irving Cummings and starring Janet Gaynor.  It was produced and distributed by Fox Film Corporation.... Mary Coustas: Mary Coustas Mary Coustas (Greek: Μαρία Κούστας ; born 16 September 1964) is an Australian actress, comedian and television personality.  Originally from Melbourne, Coustas often performs as the chara... Susan Cartsonis: Susan Cartsonis Susan Cartsonis is an American film producer and the president of Storefront Pictures.  She produced \"Firelight\", \"Where the Heart Is\", \"What Women Want\", \"Aquamarine\", \"Beastly\", and ... Kiss Kiss (Bang Bang): Kiss Kiss (Bang Bang) Kiss Kiss (Bang Bang) is a 2001 British comedy film written and directed by Stewart Sugg.  It features Stellan Skarsgård, Chris Penn, and Paul Bettany.... Drew Cam: Drew Cam \"Drew Cam\" is the ninth episode of the fifth season of the American sitcom \"The Drew Carey Show\", and the 110th overall.  The episode sees Drew (Drew Carey) becoming a 24-hour salesman for th...",
+        "topk": [
+          {
+            "pid": 44934,
+            "score": 0.4307284653186798,
+            "title": "The Midnight Kiss"
+          },
+          {
+            "pid": 42277,
+            "score": 0.4237738847732544,
+            "title": "Mary Coustas"
+          },
+          {
+            "pid": 23046,
+            "score": 0.39894524216651917,
+            "title": "Susan Cartsonis"
+          },
+          {
+            "pid": 40282,
+            "score": 0.38605016469955444,
+            "title": "Kiss Kiss (Bang Bang)"
+          },
+          {
+            "pid": 29568,
+            "score": 0.38380271196365356,
+            "title": "Drew Cam"
+          }
+        ],
+        "bleu": 0.25,
+        "rouge": 0.28571428571428575,
+        "bertscore": 0.8253257274627686
+      },
+      {
+        "query": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+        "reference": "Animorphs",
+        "answer": "The Chronicles of Thomas Covenant",
+        "retrieved_context": "The Chronicles of Thomas Covenant: The Chronicles of Thomas Covenant The Chronicles of Thomas Covenant is a series of ten high fantasy novels written by American author Stephen R. Donaldson.  The series began as a trilogy, entitled \"Th... The Chronicles of Tornor: The Chronicles of Tornor The Chronicles of Tornor is a fantasy series by American lesbian author Elizabeth A. Lynn.  The first book in the series, \"Watchtower\" (1979), won a World Fantasy Award for Be... Isaac Asimov's Magical Worlds of Fantasy: Isaac Asimov's Magical Worlds of Fantasy Isaac Asimov's Magical Worlds of Fantasy is a series of twelve themed paperback fantasy and science fiction anthologies edited by Isaac Asimov, Martin H. Green... Wildwood (novel): Wildwood (novel) Wildwood: The Wildwood Chronicles, Book 1 is a 2011 children's fantasy novel by The Decemberists' singer-songwriter Colin Meloy, illustrated by his wife Carson Ellis.  The 541 page no... Earthsea: Earthsea Earthsea is a series of fantasy books by the American writer Ursula K. Le Guin, and the name of their setting, a world of islands surrounded by an uncharted ocean.  Starting with a short stor...",
+        "topk": [
+          {
+            "pid": 6978,
+            "score": 0.4779295325279236,
+            "title": "The Chronicles of Thomas Covenant"
+          },
+          {
+            "pid": 37297,
+            "score": 0.4466269016265869,
+            "title": "The Chronicles of Tornor"
+          },
+          {
+            "pid": 23048,
+            "score": 0.44288840889930725,
+            "title": "Isaac Asimov's Magical Worlds of Fantasy"
+          },
+          {
+            "pid": 41381,
+            "score": 0.43883195519447327,
+            "title": "Wildwood (novel)"
+          },
+          {
+            "pid": 12351,
+            "score": 0.4359435737133026,
+            "title": "Earthsea"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.801708459854126
+      },
+      {
+        "query": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+        "reference": "no",
+        "answer": "The Laleli Mosque and Esm",
+        "retrieved_context": "Sultan Ahmed Mosque: Sultan Ahmed Mosque The Sultan Ahmed Mosque or Sultan Ahmet Mosque (Turkish: \"Sultan Ahmet Camii\" ) is a historic mosque located in Istanbul, Turkey.  A popular tourist site, the Sultan Ahmed Mosque c... Mısır Apartment: Mısır Apartment The Mısır Apartment or Mısır Apartmanı (Turkish for \"Egypt Apartment\") is a famed historical building on the renowned İstiklal Avenue in the Beyoğlu district of Istanbul, Turkey.  Over... The Taj Mahal Palace Hotel: The Taj Mahal Palace Hotel The Taj Mahal Palace Hotel (Marathi: ताजमहल हॉटेल) is a \"Heritage Grand\" class five-star hotel in the Colaba region of Mumbai, Maharashtra, India, next to the Gateway of Ind... Gülhane Park: Gülhane Park Gülhane Park (Turkish: \"Gülhane Parkı\" , \"Rosehouse Park\"; from Persian: \"Gulkhāna\", \"house of flowers\") is a historical urban park in the Eminönü district of Istanbul, Turkey; it is loca... Sedefkar Mehmed Agha: Sedefkar Mehmed Agha Sedefkar Mehmed Agha Biçakçiu or Sedefqar Mehmeti of Elbasan (Modern Turkish: \"Sedefkâr Mehmet Ağa\", about 1540 - 1617) is recorded as the Ottoman architect of the Sultan Ahmed Mo...",
+        "topk": [
+          {
+            "pid": 7820,
+            "score": 0.48549485206604004,
+            "title": "Sultan Ahmed Mosque"
+          },
+          {
+            "pid": 37039,
+            "score": 0.4737011790275574,
+            "title": "Mısır Apartment"
+          },
+          {
+            "pid": 29172,
+            "score": 0.47295838594436646,
+            "title": "The Taj Mahal Palace Hotel"
+          },
+          {
+            "pid": 1136,
+            "score": 0.46259328722953796,
+            "title": "Gülhane Park"
+          },
+          {
+            "pid": 7822,
+            "score": 0.45953547954559326,
+            "title": "Sedefkar Mehmed Agha"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.8299444913864136
+      },
+      {
+        "query": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+        "reference": "Greenwich Village, New York City",
+        "answer": "New York",
+        "retrieved_context": "Big Stone Gap (film): Big Stone Gap (film) Big Stone Gap is a 2014 American drama romantic comedy film written and directed by Adriana Trigiani and produced by Donna Gigliotti for Altar Identity Studios, a subsidiary of Me... Rhinestone (film): Rhinestone (film) Rhinestone is a 1984 American musical comedy film directed by Bob Clark from a screenplay by Sylvester Stallone and Phil Alden Robinson and starring Stallone and Dolly Parton.... Stonewall (2015 film): Stonewall (2015 film) Stonewall is a 2015 American drama film directed by Roland Emmerich and written by Jon Robin Baitz.  The film stars Jeremy Irvine, Ron Perlman, Jonathan Rhys Meyers, Joey King, C... Come, Closer: Come, Closer Come, Closer () is a 2010 South Korean indie romance melodrama film.  A directorial debut by Kim Jong-kwan and starring Yoon Kye-sang, Jung Yu-mi, Yoon Hee-seok and Yozoh, the full-length... King of New York: King of New York King of New York is a 1990 Italian-American crime thriller film, starring Christopher Walken, Laurence Fishburne, David Caruso, Wesley Snipes, Victor Argo, and Giancarlo Esposito.  It...",
+        "topk": [
+          {
+            "pid": 45421,
+            "score": 0.7620366811752319,
+            "title": "Big Stone Gap (film)"
+          },
+          {
+            "pid": 33342,
+            "score": 0.4415209889411926,
+            "title": "Rhinestone (film)"
+          },
+          {
+            "pid": 17002,
+            "score": 0.43170875310897827,
+            "title": "Stonewall (2015 film)"
+          },
+          {
+            "pid": 40125,
+            "score": 0.395855188369751,
+            "title": "Come, Closer"
+          },
+          {
+            "pid": 21050,
+            "score": 0.3952421247959137,
+            "title": "King of New York"
+          }
+        ],
+        "bleu": 0.1353352832366127,
+        "rouge": 0.5714285714285715,
+        "bertscore": 0.8688083291053772
+      },
+      {
+        "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+        "reference": "YG Entertainment",
+        "answer": "Cho Kyuhyun",
+        "retrieved_context": "List of South Korean idol groups: List of South Korean idol groups The following is a list of South Korean idol musical bands.  This includes a list of boy bands and girl groups, organized by year of debut.... Cho Kyu-hyun discography: Cho Kyu-hyun discography Cho Kyuhyun (better known by his mononym Kyuhyun) is a South Korean singer.  His discography consists of one studio album, three extended plays, seven singles, three promotion... Drug Restaurant: Drug Restaurant Drug Restaurant (Hangul: 드럭 레스토랑), formerly known as the Jung Joon Young Band (JJY Band) (Hangul: 정준영밴드), is a Korean rock band, formed in Seoul, South Korea in 2014.  The band consist... Seoulite (album): Seoulite (album) Seoulite is the second album by South Korean singer Lee Hi.  The album marked her comeback to the Korean music scene after a three-year hiatus following the release of her debut studi... Sharp (South Korean band): Sharp (South Korean band) Sharp (stylized as S♯arp) was a South Korean pop music vocal group in the late 1990s and early 2000s.  The group consisted of Chris Kim, Jang Seok-hyun, Seo Ji-young and Lee ...",
+        "topk": [
+          {
+            "pid": 34521,
+            "score": 0.6015656590461731,
+            "title": "List of South Korean idol groups"
+          },
+          {
+            "pid": 39864,
+            "score": 0.60005784034729,
+            "title": "Cho Kyu-hyun discography"
+          },
+          {
+            "pid": 23200,
+            "score": 0.5438665151596069,
+            "title": "Drug Restaurant"
+          },
+          {
+            "pid": 16867,
+            "score": 0.54157954454422,
+            "title": "Seoulite (album)"
+          },
+          {
+            "pid": 15397,
+            "score": 0.5385580062866211,
+            "title": "Sharp (South Korean band)"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.7603762149810791
+      },
+      {
+        "query": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+        "reference": "Eenasul Fateh",
+        "answer": "Alexander Alyabyev",
+        "retrieved_context": "Edip Ilkbahar: Edip Ilkbahar Edip İlkbahar (born 1960 in Istanbul), Founder of Alarko – Hillside Leisure Group Founder and Coordinator, Businessman.... Superfantagenio: Superfantagenio Superfantagenio (also known as \"Aladin\") is a 1986 Italian family comedy film starring Bud Spencer as the Genie and Luca Venantini as Aladdin, and with Spencer's daughter Diamy partici... Salman Iqbal: Salman Iqbal Salman Iqbal (Urdu: ‎ ) is a Pakistani media mogul.  He became the CEO of ARY Digital Network in 2014 after the death of Abdul Razzak Yaqoob.  In addition, Iqbal is the owner of the ARY G... Alastis: Alastis Alastis was a Swiss gothic black metal band formed in 1987 in Sion, Valais.... Alexander Alyabyev: Alexander Alyabyev Alexander Aleksandrovich Alyabyev (Russian: Алекса́ндр Алекса́ндрович Аля́бьев ; 15 August [O.S. 4 August] 1787 6 March [O.S. 22 February] 1851 ), also rendered as Alabiev or Alabie...",
+        "topk": [
+          {
+            "pid": 17155,
+            "score": 0.445669025182724,
+            "title": "Edip Ilkbahar"
+          },
+          {
+            "pid": 31758,
+            "score": 0.4242344796657562,
+            "title": "Superfantagenio"
+          },
+          {
+            "pid": 17925,
+            "score": 0.4154606759548187,
+            "title": "Salman Iqbal"
+          },
+          {
+            "pid": 37862,
+            "score": 0.4045470654964447,
+            "title": "Alastis"
+          },
+          {
+            "pid": 3756,
+            "score": 0.40243980288505554,
+            "title": "Alexander Alyabyev"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.7490795254707336
+      },
+      {
+        "query": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+        "reference": "3,677 seated",
+        "answer": "7,583",
+        "retrieved_context": "Tony’s Pizza Events Center: Tony’s Pizza Events Center Tony’s Pizza Events Center, formerly the Bicentennial Center, is located in Salina, Kansas.  It includes a 7,583-seat multipurpose arena, meeting rooms and Heritage Hall, an... Joseph L. Bruno Stadium: Joseph L. Bruno Stadium Joseph Bruno Stadium is a stadium located on the campus of Hudson Valley Community College in Troy, New York.  It is the home field of the Tri-City ValleyCats minor league base... Columbus Aces: Columbus Aces The Columbus Aces were a proposed indoor football team based in Columbus, Ohio.  The team was set to be the final team expansion team of the Continental Indoor Football League in 2010.  ... Tri-City ValleyCats: Tri-City ValleyCats The Tri-City ValleyCats (often shortened to ' Cats) are a minor league baseball team based in Troy, New York, and the 2010 and 2013 champions of the New York–Penn League (NYPL).  T... Alfond Stadium (University of Maine): Alfond Stadium (University of Maine) Morse Field at Harold Alfond Sports Stadium is a 10,000-seat multi-purpose stadium in Orono, Maine.  The stadium opened as Alumni Field in 1947 and underwent exten...",
+        "topk": [
+          {
+            "pid": 6913,
+            "score": 0.46530598402023315,
+            "title": "Tony’s Pizza Events Center"
+          },
+          {
+            "pid": 11455,
+            "score": 0.4301803410053253,
+            "title": "Joseph L. Bruno Stadium"
+          },
+          {
+            "pid": 2997,
+            "score": 0.42946934700012207,
+            "title": "Columbus Aces"
+          },
+          {
+            "pid": 11457,
+            "score": 0.4173264503479004,
+            "title": "Tri-City ValleyCats"
+          },
+          {
+            "pid": 16413,
+            "score": 0.4158497750759125,
+            "title": "Alfond Stadium (University of Maine)"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.9252578616142273
+      },
+      {
+        "query": "Who is older, Annie Morton or Terry Richardson?",
+        "reference": "Terry Richardson",
+        "answer": "Annie Morton",
+        "retrieved_context": "Samantha Morton: Samantha Morton Samantha Jane Morton (born 13 May 1977) is an English actress, screenwriter and director.  She has received critical acclaim throughout her career and has won a BAFTA Award, one BIFA A... Chelsea Lawson: Chelsea Lawson Chelsea Lawson is a fictional character from \"The Young and the Restless\", an American soap opera on the CBS network.  Portrayed by Melissa Claire Egan, she was created by former head w... Annie Morton: Annie Morton Annie Morton (born October 8, 1970) is an American model born in Pennsylvania.  She has appeared on the covers of \"British Vogue\", \"ID\", \"Marie Claire\", and other magazines.  She has been... Terry Date: Terry Date Terry Date (born January 31, 1956) is an American record producer and engineer, specializing in the rock genres, especially heavy metal.  He is well known for his work with Overkill, Metal ... Sarah Noriega: Sarah Noriega Sarah Beth Noriega (born April 24, 1976) is a former indoor volleyball player.  She played for Loyola Marymount University from 1994 to 1997 and was named the 1997 West Coast Conference ...",
+        "topk": [
+          {
+            "pid": 16507,
+            "score": 0.5236966609954834,
+            "title": "Samantha Morton"
+          },
+          {
+            "pid": 21059,
+            "score": 0.45776355266571045,
+            "title": "Chelsea Lawson"
+          },
+          {
+            "pid": 45722,
+            "score": 0.4239189326763153,
+            "title": "Annie Morton"
+          },
+          {
+            "pid": 33814,
+            "score": 0.4119233191013336,
+            "title": "Terry Date"
+          },
+          {
+            "pid": 11315,
+            "score": 0.40383896231651306,
+            "title": "Sarah Noriega"
+          }
+        ],
+        "bleu": 0,
+        "rouge": 0.0,
+        "bertscore": 0.9008997678756714
+      },
+      {
+        "query": "Are Local H and For Against both from the United States?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "H&amp;R Block: H&amp;R Block H&R Block is an American tax preparation company in North America, Australia, and India.  The Kansas City-based company also offers payroll, and business consulting services.... Two Jane Does v US: Two Jane Does v US Jane Doe #1 and Jane Doe #2 vs United States of America is a civil action in the US District Court in Florida, which has led to allegations of inappropriate behavior being made agai... Nonpartisanism in the United States: Nonpartisanism in the United States Nonpartisanism in the United States is organized under United States Internal Revenue Code (501(c)) that qualifies certain non-profit organizations for tax-exempt s... For Against: For Against For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from... Enemy Expatriation Act: Enemy Expatriation Act The Enemy Expatriation Act (HR 3166 and S. 1698) is a proposed law in the United States sponsored by Senators Joe Lieberman (I-CT) and Scott Brown (R-MA) and Representatives Cha...",
+        "topk": [
+          {
+            "pid": 24437,
+            "score": 0.37012049555778503,
+            "title": "H&amp;R Block"
+          },
+          {
+            "pid": 2227,
+            "score": 0.34075284004211426,
+            "title": "Two Jane Does v US"
+          },
+          {
+            "pid": 44776,
+            "score": 0.3336542844772339,
+            "title": "Nonpartisanism in the United States"
+          },
+          {
+            "pid": 13778,
+            "score": 0.3133954703807831,
+            "title": "For Against"
+          },
+          {
+            "pid": 31371,
+            "score": 0.3114736080169678,
+            "title": "Enemy Expatriation Act"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0
+      }
+    ],
+    "faithful_examples": [
+      {
+        "query": "Are Local H and For Against both from the United States?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "H&amp;R Block: H&amp;R Block H&R Block is an American tax preparation company in North America, Australia, and India.  The Kansas City-based company also offers payroll, and business consulting services.... Two Jane Does v US: Two Jane Does v US Jane Doe #1 and Jane Doe #2 vs United States of America is a civil action in the US District Court in Florida, which has led to allegations of inappropriate behavior being made agai... Nonpartisanism in the United States: Nonpartisanism in the United States Nonpartisanism in the United States is organized under United States Internal Revenue Code (501(c)) that qualifies certain non-profit organizations for tax-exempt s... For Against: For Against For Against is a United States post-punk/dream pop band from Lincoln, Nebraska.  Despite numerous lineup shuffles and some periods of dormancy, the band has produced material steadily from... Enemy Expatriation Act: Enemy Expatriation Act The Enemy Expatriation Act (HR 3166 and S. 1698) is a proposed law in the United States sponsored by Senators Joe Lieberman (I-CT) and Scott Brown (R-MA) and Representatives Cha...",
+        "topk": [
+          {
+            "pid": 24437,
+            "score": 0.37012049555778503,
+            "title": "H&amp;R Block"
+          },
+          {
+            "pid": 2227,
+            "score": 0.34075284004211426,
+            "title": "Two Jane Does v US"
+          },
+          {
+            "pid": 44776,
+            "score": 0.3336542844772339,
+            "title": "Nonpartisanism in the United States"
+          },
+          {
+            "pid": 13778,
+            "score": 0.3133954703807831,
+            "title": "For Against"
+          },
+          {
+            "pid": 31371,
+            "score": 0.3114736080169678,
+            "title": "Enemy Expatriation Act"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+        "reference": "Badly Drawn Boy",
+        "answer": "Badly Drawn Boy",
+        "retrieved_context": "Play Hard: Play Hard \"Play Hard\" is a song by French DJ and record producer David Guetta, featuring vocals from singers Ne-Yo and Akon, from the re-release of Guetta's fifth studio album, \"Nothing but the Beat\".... Raphael Xavier: Raphael Xavier Raphael Xavier Williams (born December 7, 1970) is known as an Inmoc-ographer (innovative movement conceptualist).  He is a professional breaker/dancer, rapper, music producer, comedian... History of live action role-playing games: History of live action role-playing games Live action role-playing games, known as LARPs, are a form of role-playing game in which live players/actors assume roles as specific characters and play out ... List of Child's Play characters: List of Child's Play characters Child's Play is an American horror franchise that consists of six slasher films and numerous comic books.  The main antagonist is Chucky, also known as Charles Lee Ray,... Workshop production: Workshop production A workshop production is a form of theatrical performance, in which a play or musical is staged in a modest form which does not include some aspects of a full production.  For exam...",
+        "topk": [
+          {
+            "pid": 17572,
+            "score": 0.3308813273906708,
+            "title": "Play Hard"
+          },
+          {
+            "pid": 27087,
+            "score": 0.32585203647613525,
+            "title": "Raphael Xavier"
+          },
+          {
+            "pid": 11979,
+            "score": 0.3092630207538605,
+            "title": "History of live action role-playing games"
+          },
+          {
+            "pid": 12674,
+            "score": 0.30772221088409424,
+            "title": "List of Child's Play characters"
+          },
+          {
+            "pid": 27297,
+            "score": 0.3031635582447052,
+            "title": "Workshop production"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+        "reference": "2000",
+        "answer": "2000",
+        "retrieved_context": "Carlo Rovelli: Carlo Rovelli Carlo Rovelli (born 3 May 1956) is an Italian theoretical physicist and writer who has worked in Italy, the United States and since 2000, in France.  His work is mainly in the field of q... Sergio Ferrara: Sergio Ferrara Sergio Ferrara (born May 2, 1945) is an Italian physicist working on theoretical physics of elementary particles and mathematical physics.  He is renowned for the discovery of theories ... Physicist: Physicist A physicist is a scientist who has specialized knowledge in the field of physics, the exploration of the interactions of matter and energy across the physical universe.... Marie-Paule Pileni: Marie-Paule Pileni Marie-Paule Pileni is a French physical chemist who was born in Tananarive, Madagascar.  She is a Distinguished Professor at the Université Pierre et Marie Curie (UPMC) and a Senior... Peter van Nieuwenhuizen: Peter van Nieuwenhuizen Peter van Nieuwenhuizen (] ; born October 26, 1938) is a Dutch physicist.  He is now a distinguished Professor at Stony Brook University in the United States.  Van Nieuwenhuize...",
+        "topk": [
+          {
+            "pid": 28212,
+            "score": 0.5272487998008728,
+            "title": "Carlo Rovelli"
+          },
+          {
+            "pid": 14682,
+            "score": 0.4278631806373596,
+            "title": "Sergio Ferrara"
+          },
+          {
+            "pid": 14362,
+            "score": 0.41117408871650696,
+            "title": "Physicist"
+          },
+          {
+            "pid": 21911,
+            "score": 0.38194170594215393,
+            "title": "Marie-Paule Pileni"
+          },
+          {
+            "pid": 14675,
+            "score": 0.37839895486831665,
+            "title": "Peter van Nieuwenhuizen"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "Are Ferocactus and Silene both types of plant?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "Fouquieria: Fouquieria Fouquieria is a genus of 11 species of desert plants, the sole genus in the family Fouquieriaceae.  The genus includes the ocotillo (\"F. splendens\") and the boojum tree or cirio (\"F. column... Strombocactus: Strombocactus Strombocactus disciformis is a rare species of cacti and the only species of the genus Strombocactus.  The plant originates from Central and Northeast Mexico.... Coreopsis gigantea: Coreopsis gigantea Coreopsis gigantea with the common name giant coreopsis, is a woody perennial plant native to coastal regions of central and southern California and also to northern Baja California... Chelidonium: Chelidonium Chelidonium majus, commonly known as greater celandine or tetterwort,(although tetterwort also refers to \"Sanguinaria canadensis\"), nipplewort, or swallowwort, is a herbaceous perennial pl... Libocedrus: Libocedrus Libocedrus is a genus of five species of coniferous trees in the cypress family Cupressaceae, native to New Zealand and New Caledonia.  The genus is closely related to the South American ge...",
+        "topk": [
+          {
+            "pid": 44448,
+            "score": 0.500996470451355,
+            "title": "Fouquieria"
+          },
+          {
+            "pid": 40103,
+            "score": 0.4855186343193054,
+            "title": "Strombocactus"
+          },
+          {
+            "pid": 29673,
+            "score": 0.4503049850463867,
+            "title": "Coreopsis gigantea"
+          },
+          {
+            "pid": 13494,
+            "score": 0.4264940023422241,
+            "title": "Chelidonium"
+          },
+          {
+            "pid": 23384,
+            "score": 0.42255282402038574,
+            "title": "Libocedrus"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      },
+      {
+        "query": "Are both Dictyosperma, and Huernia described as a genus?",
+        "reference": "yes",
+        "answer": "yes",
+        "retrieved_context": "Dittrichia: Dittrichia Dittrichia is a genus of flowering plants in the daisy family.  Its species were formerly included in the genus Inula.... Dioscorea: Dioscorea Dioscorea is a genus of over 600 species of flowering plants in the family Dioscoreaceae, native throughout the tropical and warm temperate regions of the world.  The vast majority of the sp... Disanthus: Disanthus Disanthus is a genus containing two species of flowering plants in the family Hamamelidaceae.  The type species, \"Disanthus cercidifolius\", was the only known species until 2017, when a seco... Hottonia: Hottonia Hottonia is a genus of aquatic flowering plants in the family Primulaceae.  It comprises two species:... Diocirea: Diocirea Diocirea is a genus of flowering plants in the figwort family, Scrophulariaceae.  The genus is endemic to a small area in the south-west of Western Australia and is intermediate in character ...",
+        "topk": [
+          {
+            "pid": 44445,
+            "score": 0.5395039916038513,
+            "title": "Dittrichia"
+          },
+          {
+            "pid": 36504,
+            "score": 0.5393939018249512,
+            "title": "Dioscorea"
+          },
+          {
+            "pid": 17359,
+            "score": 0.5050362348556519,
+            "title": "Disanthus"
+          },
+          {
+            "pid": 19587,
+            "score": 0.5050271153450012,
+            "title": "Hottonia"
+          },
+          {
+            "pid": 13762,
+            "score": 0.488751083612442,
+            "title": "Diocirea"
+          }
+        ],
+        "bleu": 1.0,
+        "rouge": 1.0,
+        "bertscore": 1.0,
+        "joint": 1.0
+      }
+    ],
+    "hallucinated_examples": [
+      {
+        "query": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+        "reference": "World's Best Goalkeeper",
+        "answer": "Peter Schmeichel",
+        "retrieved_context": "Kasper Schmeichel: Kasper Schmeichel Kasper Peter Schmeichel (] ; born 5 November 1986) is a Danish professional footballer who plays as a goalkeeper for Premier League club Leicester City and the Denmark national team.... Kasper Jensen: Kasper Jensen Kasper Jensen (born 7 October 1982) is a Danish retired footballer who played as a goalkeeper.... Kasper Bøgelund: Kasper Bøgelund Kasper Bøgelund Nielsen (born 8 October 1980 in Odense) is a retired Danish footballer.  He last played as a right back for AaB in the Danish Superliga.  Bøgelund has played 17 games f... Peter Schmeichel: Peter Schmeichel Peter Bolesław Schmeichel MBE (] ; born 18 November 1963) is a Danish former professional footballer who played as a goalkeeper, and was voted the IFFHS World's Best Goalkeeper in 199... Kasper Lorentzen: Kasper Lorentzen Kasper Wellemberg Lorentzen (born November 19, 1985) is a Danish retired professional footballer, who played as a midfielder or forward.  He has represented various Danish youth natio...",
+        "topk": [
+          {
+            "pid": 43433,
+            "score": 0.6711655259132385,
+            "title": "Kasper Schmeichel"
+          },
+          {
+            "pid": 43428,
+            "score": 0.5352276563644409,
+            "title": "Kasper Jensen"
+          },
+          {
+            "pid": 43434,
+            "score": 0.5052502751350403,
+            "title": "Kasper Bøgelund"
+          },
+          {
+            "pid": 43431,
+            "score": 0.49909788370132446,
+            "title": "Peter Schmeichel"
+          },
+          {
+            "pid": 43426,
+            "score": 0.490440309047699,
+            "title": "Kasper Lorentzen"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7467151880264282,
+        "joint": 0.24890506267547607
+      },
+      {
+        "query": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+        "reference": "Eenasul Fateh",
+        "answer": "Alexander Alyabyev",
+        "retrieved_context": "Edip Ilkbahar: Edip Ilkbahar Edip İlkbahar (born 1960 in Istanbul), Founder of Alarko – Hillside Leisure Group Founder and Coordinator, Businessman.... Superfantagenio: Superfantagenio Superfantagenio (also known as \"Aladin\") is a 1986 Italian family comedy film starring Bud Spencer as the Genie and Luca Venantini as Aladdin, and with Spencer's daughter Diamy partici... Salman Iqbal: Salman Iqbal Salman Iqbal (Urdu: ‎ ) is a Pakistani media mogul.  He became the CEO of ARY Digital Network in 2014 after the death of Abdul Razzak Yaqoob.  In addition, Iqbal is the owner of the ARY G... Alastis: Alastis Alastis was a Swiss gothic black metal band formed in 1987 in Sion, Valais.... Alexander Alyabyev: Alexander Alyabyev Alexander Aleksandrovich Alyabyev (Russian: Алекса́ндр Алекса́ндрович Аля́бьев ; 15 August [O.S. 4 August] 1787 6 March [O.S. 22 February] 1851 ), also rendered as Alabiev or Alabie...",
+        "topk": [
+          {
+            "pid": 17155,
+            "score": 0.445669025182724,
+            "title": "Edip Ilkbahar"
+          },
+          {
+            "pid": 31758,
+            "score": 0.4242344796657562,
+            "title": "Superfantagenio"
+          },
+          {
+            "pid": 17925,
+            "score": 0.4154606759548187,
+            "title": "Salman Iqbal"
+          },
+          {
+            "pid": 37862,
+            "score": 0.4045470654964447,
+            "title": "Alastis"
+          },
+          {
+            "pid": 3756,
+            "score": 0.40243980288505554,
+            "title": "Alexander Alyabyev"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7490795254707336,
+        "joint": 0.24969317515691122
+      },
+      {
+        "query": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and Téa Leoni?",
+        "reference": "David Weissman",
+        "answer": "Alain Guiraudie",
+        "retrieved_context": "Evolution (2001 film): Evolution (2001 film) Evolution is a 2001 American science-fiction monster comedy film directed by Ivan Reitman and starring David Duchovny, Orlando Jones, Seann William Scott, Julianne Moore, and Ted... Alain Guiraudie: Alain Guiraudie Alain Guiraudie (] ; born 15 July 1964) is a French film director and screenwriter.  He has directed ten mostly LGBT-related films since 1990.  He is openly gay.... Nicolas Wright: Nicolas Wright Nicolas Wright (born March 23, 1982) is a Canadian actor.  Wright has performed on stage, television and film.  In 2004, he received the \"most promising newcomer\" award at the Just for ... Creation (2009 film): Creation (2009 film) Creation is a 2009 British biographical drama film about Charles Darwin's relationship with his wife Emma and his memory of their eldest daughter Annie, as he struggles to write \"... Furia (film): Furia (film) Furia is a 1999 French romantic drama film directed by Alexandre Aja, who co-wrote screenplay with Grégory Levasseur, adapted from the science fiction short story \"Graffiti\" by Julio Cort...",
+        "topk": [
+          {
+            "pid": 27143,
+            "score": 0.5023473501205444,
+            "title": "Evolution (2001 film)"
+          },
+          {
+            "pid": 16978,
+            "score": 0.4534708857536316,
+            "title": "Alain Guiraudie"
+          },
+          {
+            "pid": 32795,
+            "score": 0.44550707936286926,
+            "title": "Nicolas Wright"
+          },
+          {
+            "pid": 15519,
+            "score": 0.43047216534614563,
+            "title": "Creation (2009 film)"
+          },
+          {
+            "pid": 16576,
+            "score": 0.4284448027610779,
+            "title": "Furia (film)"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7593110799789429,
+        "joint": 0.25310369332631427
+      },
+      {
+        "query": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+        "reference": "YG Entertainment",
+        "answer": "Cho Kyuhyun",
+        "retrieved_context": "List of South Korean idol groups: List of South Korean idol groups The following is a list of South Korean idol musical bands.  This includes a list of boy bands and girl groups, organized by year of debut.... Cho Kyu-hyun discography: Cho Kyu-hyun discography Cho Kyuhyun (better known by his mononym Kyuhyun) is a South Korean singer.  His discography consists of one studio album, three extended plays, seven singles, three promotion... Drug Restaurant: Drug Restaurant Drug Restaurant (Hangul: 드럭 레스토랑), formerly known as the Jung Joon Young Band (JJY Band) (Hangul: 정준영밴드), is a Korean rock band, formed in Seoul, South Korea in 2014.  The band consist... Seoulite (album): Seoulite (album) Seoulite is the second album by South Korean singer Lee Hi.  The album marked her comeback to the Korean music scene after a three-year hiatus following the release of her debut studi... Sharp (South Korean band): Sharp (South Korean band) Sharp (stylized as S♯arp) was a South Korean pop music vocal group in the late 1990s and early 2000s.  The group consisted of Chris Kim, Jang Seok-hyun, Seo Ji-young and Lee ...",
+        "topk": [
+          {
+            "pid": 34521,
+            "score": 0.6015656590461731,
+            "title": "List of South Korean idol groups"
+          },
+          {
+            "pid": 39864,
+            "score": 0.60005784034729,
+            "title": "Cho Kyu-hyun discography"
+          },
+          {
+            "pid": 23200,
+            "score": 0.5438665151596069,
+            "title": "Drug Restaurant"
+          },
+          {
+            "pid": 16867,
+            "score": 0.54157954454422,
+            "title": "Seoulite (album)"
+          },
+          {
+            "pid": 15397,
+            "score": 0.5385580062866211,
+            "title": "Sharp (South Korean band)"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7603762149810791,
+        "joint": 0.25345873832702637
+      },
+      {
+        "query": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+        "reference": "Pedro Rodríguez",
+        "answer": "Lucas di Grassi",
+        "retrieved_context": "Motorsport in India: Motorsport in India Motorsport is a popular form of sport in the nation of India.  Formula One in particular has taken off in the country in the 2000s, with two Indian driver competing (Narain Karthik... Giuseppe Farina: Giuseppe Farina Dottore Emilio Giuseppe \"Nino\" Farina (30 October 1906 – 30 June 1966), was an Italian racing driver and was the first official Formula One World Champion, gaining the title in 1950.  ... Jérôme d'Ambrosio: Jérôme d'Ambrosio Jérôme d'Ambrosio (born 27 December 1985) is a Belgian professional racing driver.  He drove for Marussia Virgin Racing during the 2011 Formula One World Championship.  As a result o... Moisés Solana: Moisés Solana Moisés Solana Arciniega (December 26, 1935 – July 27, 1969) was a racing driver from Mexico.  He participated in eight Formula One World Championship Grands Prix, debuting on October 27,... Lucas di Grassi: Lucas di Grassi Lucas Tucci di Grassi (born 11 August 1984) is a Brazilian professional racing driver who currently competes for Audi Sport ABT in Formula E and is the 2016-17 World Champion.  In 2014...",
+        "topk": [
+          {
+            "pid": 29530,
+            "score": 0.5593568086624146,
+            "title": "Motorsport in India"
+          },
+          {
+            "pid": 44118,
+            "score": 0.5515134334564209,
+            "title": "Giuseppe Farina"
+          },
+          {
+            "pid": 819,
+            "score": 0.532992959022522,
+            "title": "Jérôme d'Ambrosio"
+          },
+          {
+            "pid": 22496,
+            "score": 0.5295047760009766,
+            "title": "Moisés Solana"
+          },
+          {
+            "pid": 823,
+            "score": 0.5204355716705322,
+            "title": "Lucas di Grassi"
+          }
+        ],
+        "bleu": 0.0,
+        "rouge": 0.0,
+        "bertscore": 0.7682346105575562,
+        "joint": 0.25607820351918537
+      }
+    ]
+  }
+}

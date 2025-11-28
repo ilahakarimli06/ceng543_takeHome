@@ -1,0 +1,62 @@
+{
+  "glove_bilstm": {
+    "model_name": "GloVe + BiLSTM",
+    "checkpoint": "C:\\Users\\kilah\\ceng543_takeHome\\glove__bilstm_model.pt",
+    "num_samples": 2000,
+    "separability": {
+      "center_distance": 3.4508347511291504,
+      "avg_within_class_variance": 0.026611479930579662,
+      "separability_score": 21.15386113923644
+    },
+    "pca_explained_variance": [
+      0.4922477900981903,
+      0.04375681281089783
+    ],
+    "tsne_perplexity": 30.0
+  },
+  "glove_bigru": {
+    "model_name": "GloVe + BiGRU",
+    "checkpoint": "C:\\Users\\kilah\\ceng543_takeHome\\glove__bigru_model.pt",
+    "num_samples": 2000,
+    "separability": {
+      "center_distance": 4.004452705383301,
+      "avg_within_class_variance": 0.0544863510876894,
+      "separability_score": 17.15533908482513
+    },
+    "pca_explained_variance": [
+      0.3655661642551422,
+      0.0629502460360527
+    ],
+    "tsne_perplexity": 30.0
+  },
+  "bert_bilstm": {
+    "model_name": "BERT + BiLSTM",
+    "checkpoint": "C:\\Users\\kilah\\ceng543_takeHome\\bert__bilstm_model.pt",
+    "num_samples": 2000,
+    "separability": {
+      "center_distance": 9.085308074951172,
+      "avg_within_class_variance": 0.04958078823983669,
+      "separability_score": 40.80214031106872
+    },
+    "pca_explained_variance": [
+      0.8201104402542114,
+      0.07268265634775162
+    ],
+    "tsne_perplexity": 30.0
+  },
+  "bert_bigru": {
+    "model_name": "BERT + BiGRU",
+    "checkpoint": "C:\\Users\\kilah\\ceng543_takeHome\\bert__bigru_model.pt",
+    "num_samples": 2000,
+    "separability": {
+      "center_distance": 16.362720489501953,
+      "avg_within_class_variance": 0.18475134670734406,
+      "separability_score": 38.06814416929931
+    },
+    "pca_explained_variance": [
+      0.7920085787773132,
+      0.043776996433734894
+    ],
+    "tsne_perplexity": 30.0
+  }
+}

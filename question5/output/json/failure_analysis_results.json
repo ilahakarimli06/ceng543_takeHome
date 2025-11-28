@@ -1,0 +1,73 @@
+[
+  {
+    "case_number": 1,
+    "source": "Ein junger, behelmter Fahrradfahrer in Blau wird bei der Fahrt über kleine Hügel in die Luft getragen.",
+    "reference": "A young helmeted biker in blue takes to the air while going over small hills.",
+    "hypothesis": "A young man wearing a helmet is being lifted over small hills while riding his bike is flying into the air.",
+    "bleu": 3.0232667130855924,
+    "failure_types": [
+      "Rare Words (5 uncommon tokens)",
+      "Missing Key Words (9 words)"
+    ],
+    "source_length": 17,
+    "reference_length": 15,
+    "prediction_length": 21
+  },
+  {
+    "case_number": 2,
+    "source": "Mehrere Menschen drehen einen Looping in einem auf dem Kopf stehenden Achterbahnwagen.",
+    "reference": "There are multiple people going over a loop on an inverted roller coaster.",
+    "hypothesis": "Several people are setting up a European day in a roller coaster.",
+    "bleu": 4.167227247694064,
+    "failure_types": [
+      "Rare Words (7 uncommon tokens)",
+      "Missing Key Words (8 words)"
+    ],
+    "source_length": 12,
+    "reference_length": 13,
+    "prediction_length": 12
+  },
+  {
+    "case_number": 3,
+    "source": "Mann sieht einer Frau in einer Bar beim Sprechen zu.",
+    "reference": "Man looks on as woman is talking while at a bar.",
+    "hypothesis": "A woman watches a woman in a bar.",
+    "bleu": 4.46778805361507,
+    "failure_types": [
+      "Rare Words (2 uncommon tokens)",
+      "Missing Key Words (8 words)",
+      "Repetitive Output"
+    ],
+    "source_length": 10,
+    "reference_length": 11,
+    "prediction_length": 8
+  },
+  {
+    "case_number": 4,
+    "source": "Ein Rennkatamaran wird im Wasser auf einen Rumpf gehoben.",
+    "reference": "A racing catamaran is lifted onto one hull in the water.",
+    "hypothesis": "A race cat is being lifted in the water at a carnival.",
+    "bleu": 4.529376170793883,
+    "failure_types": [
+      "Rare Words (6 uncommon tokens)",
+      "Missing Key Words (6 words)"
+    ],
+    "source_length": 9,
+    "reference_length": 11,
+    "prediction_length": 12
+  },
+  {
+    "case_number": 5,
+    "source": "Eine Frau mit freundlichem Gesicht reinigt den Boden ihres Wohnzimmers.",
+    "reference": "A kindly faced woman cleans the floor of her living room.",
+    "hypothesis": "A woman with a mith is cleaning their living room.",
+    "bleu": 4.8026165765512285,
+    "failure_types": [
+      "Rare Words (3 uncommon tokens)",
+      "Missing Key Words (7 words)"
+    ],
+    "source_length": 10,
+    "reference_length": 11,
+    "prediction_length": 10
+  }
+]
